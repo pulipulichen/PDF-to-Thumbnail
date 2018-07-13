@@ -33,7 +33,7 @@ For $i = 1 To $CmdLine[0]
 		  Else
 			  $cmd = '"' & @ScriptDir & '\image_magick\convert.exe" "' & $f & '[0]" ' & $imagemagick_cmd & ' "' & $f & '.' & $imagemagick_format &'"'
 		   EndIf
-		   MsgBox($MB_SYSTEMMODAL, "msg", $cmd)
+		   ;MsgBox($MB_SYSTEMMODAL, "msg", $cmd)
 		  RunWait($cmd , @ScriptDir, @SW_HIDE)
     EndIf
 Next
